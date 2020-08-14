@@ -112,7 +112,7 @@ class _AuthFormState extends State<AuthForm> {
                       child: Text(_isLogin ? 'Login' : 'Signup'),
                       onPressed: _trySubmit,
                     ),
-                  if (widget.isLoading)
+                  if (!widget.isLoading)
                     FlatButton(
                       textColor: Theme.of(context).primaryColor,
                       child: Text(_isLogin
